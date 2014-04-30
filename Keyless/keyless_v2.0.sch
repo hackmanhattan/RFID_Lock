@@ -12963,6 +12963,7 @@ Standard 8-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="D3" library="led" deviceset="LED" device="CHIP-LED0805" value="Green"/>
 <part name="GND24" library="SparkFun" deviceset="GND" device=""/>
 <part name="JP3" library="SparkFun-Connectors" deviceset="M08" device="1X08"/>
+<part name="GND26" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13129,6 +13130,7 @@ Standard 8-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </instance>
 <instance part="GND24" gate="1" x="116.84" y="50.8"/>
 <instance part="JP3" gate="G$1" x="76.2" y="66.04"/>
+<instance part="GND26" gate="1" x="99.06" y="93.98"/>
 </instances>
 <busses>
 </busses>
@@ -13279,6 +13281,11 @@ Standard 8-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <segment>
 <pinref part="D3" gate="G$1" pin="C"/>
 <pinref part="GND24" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="CD2"/>
+<wire x1="99.06" y1="96.52" x2="91.44" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="GND26" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -13528,6 +13535,11 @@ Standard 8-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="215.9" y1="86.36" x2="223.52" y2="86.36" width="0.1524" layer="91"/>
 <label x="220.98" y="86.36" size="1.778" layer="95"/>
 <label x="231.14" y="91.44" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="CD1"/>
+<wire x1="99.06" y1="99.06" x2="91.44" y2="99.06" width="0.1524" layer="91"/>
+<label x="99.06" y="99.06" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="F5" class="0">
@@ -13842,18 +13854,6 @@ Standard 8-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="208.28" y1="162.56" x2="223.52" y2="162.56" width="0.1524" layer="91"/>
 <junction x="208.28" y="162.56"/>
-</segment>
-</net>
-<net name="N$20" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="CD1"/>
-<wire x1="99.06" y1="99.06" x2="91.44" y2="99.06" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$21" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="CD2"/>
-<wire x1="99.06" y1="96.52" x2="91.44" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
